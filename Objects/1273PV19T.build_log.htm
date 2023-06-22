@@ -1,0 +1,562 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: s s, s, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      UL2CM3.DLL V1.164.7.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+D:\Gorlov\1273PV19T\1273PV19T.uvprojx
+Project File Date:  06/22/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+rst.c(1): warning: In file included from...
+./rst.h(6): warning: no newline at end of file [-Wnewline-eof]
+#endif /*__RST_H */
+                   ^
+rst.c(32): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+2 warnings generated.
+compiling rst.c...
+SPI.c(3): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_port.h(10): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(46): warning: '__CC_ARM' is not defined, evaluates to 0 [-Wundef]
+#if ((__CC_ARM == 0) || (__ARMCC_VERSION < 5000000))
+      ^
+SPI.c(3): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_port.h(10): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(47): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config/MDR32F9Qx_board.h(28): warning: 'USE_MDR1986BE4' macro redefined [-Wmacro-redefined]
+#define USE_MDR1986BE4
+        ^
+<command line>(4): note: previous definition is here
+#define USE_MDR1986BE4 1
+        ^
+SPI.c(5): warning: In file included from...
+./SPI.h(9): warning: no newline at end of file [-Wnewline-eof]
+#endif /*__SPI_H */
+                   ^
+SPI.c(58): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+4 warnings generated.
+compiling SPI.c...
+main.c(3): warning: non-portable path to file '"gpio.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "GPIO.h"
+         ^~~~~~~~
+         "gpio.h"
+main.c(3): warning: In file included from...
+./GPIO.h(5): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_port.h(10): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(46): warning: '__CC_ARM' is not defined, evaluates to 0 [-Wundef]
+#if ((__CC_ARM == 0) || (__ARMCC_VERSION < 5000000))
+      ^
+main.c(3): warning: In file included from...
+./GPIO.h(5): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_port.h(10): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(47): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config/MDR32F9Qx_board.h(28): warning: 'USE_MDR1986BE4' macro redefined [-Wmacro-redefined]
+#define USE_MDR1986BE4
+        ^
+<command line>(4): note: previous definition is here
+#define USE_MDR1986BE4 1
+        ^
+main.c(3): warning: In file included from...
+./GPIO.h(12): warning: no newline at end of file [-Wnewline-eof]
+#endif /*__GPIO_H */
+                    ^
+main.c(4): warning: In file included from...
+./rst.h(6): warning: no newline at end of file [-Wnewline-eof]
+#endif /*__RST_H */
+                   ^
+main.c(5): warning: In file included from...
+./SPI.h(9): warning: no newline at end of file [-Wnewline-eof]
+#endif /*__SPI_H */
+                   ^
+main.c(6): warning: In file included from...
+./ADC.h(4): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void ADC1273_init();
+                 ^
+                  void
+./ADC.h(5): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void ADC1273_reset();
+                  ^
+                   void
+./ADC.h(8): warning: no newline at end of file [-Wnewline-eof]
+#endif /*__ADC_H */
+                   ^
+main.c(7): warning: In file included from...
+./TIMER.h(4): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void TIMER1_init();
+                ^
+                 void
+./TIMER.h(8): warning: no newline at end of file [-Wnewline-eof]
+#endif /*__TIMER_H */
+                     ^
+main.c(9): warning: no previous extern declaration for non-static variable 'oldstate' [-Wmissing-variable-declarations]
+uint8_t oldstate = 10;
+        ^
+main.c(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t oldstate = 10;
+^
+main.c(10): warning: no previous extern declaration for non-static variable 'newstate' [-Wmissing-variable-declarations]
+uint8_t newstate = 0;
+        ^
+main.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t newstate = 0;
+^
+main.c(73): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+main.c(12): warning: no previous extern declaration for non-static variable 'j' [-Wmissing-variable-declarations]
+int j;
+    ^
+main.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int j;
+^
+main.c(11): warning: unused variable 'counter' [-Wunused-variable]
+static uint8_t counter = 0; 
+               ^
+16 warnings generated.
+compiling main.c...
+ADC.c(3): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_port.h(10): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(46): warning: '__CC_ARM' is not defined, evaluates to 0 [-Wundef]
+#if ((__CC_ARM == 0) || (__ARMCC_VERSION < 5000000))
+      ^
+ADC.c(3): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_port.h(10): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(47): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config/MDR32F9Qx_board.h(28): warning: 'USE_MDR1986BE4' macro redefined [-Wmacro-redefined]
+#define USE_MDR1986BE4
+        ^
+<command line>(4): note: previous definition is here
+#define USE_MDR1986BE4 1
+        ^
+ADC.c(5): warning: In file included from...
+./SPI.h(9): warning: no newline at end of file [-Wnewline-eof]
+#endif /*__SPI_H */
+                   ^
+ADC.c(6): warning: In file included from...
+./ADC.h(4): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void ADC1273_init();
+                 ^
+                  void
+./ADC.h(5): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void ADC1273_reset();
+                  ^
+                   void
+./ADC.h(8): warning: no newline at end of file [-Wnewline-eof]
+#endif /*__ADC_H */
+                   ^
+ADC.c(35): warning: implicit declaration of function 'Delay_milli' is invalid in C99 [-Wimplicit-function-declaration]
+        Delay_milli(5);
+        ^
+ADC.c(11): warning: no previous prototype for function 'ADC1273_init' [-Wmissing-prototypes]
+void ADC1273_init()
+     ^
+./ADC.h(4): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void ADC1273_init();
+     ^
+                  void
+ADC.c(11): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void ADC1273_init()
+                 ^
+ADC.c(40): warning: implicit declaration of function 'Delay_milli' is invalid in C99 [-Wimplicit-function-declaration]
+        Delay_milli(500);
+        ^
+ADC.c(38): warning: no previous prototype for function 'ADC1273_reset' [-Wmissing-prototypes]
+void ADC1273_reset()
+     ^
+./ADC.h(5): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void ADC1273_reset();
+     ^
+                   void
+ADC.c(38): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void ADC1273_reset()
+                  ^
+ADC.c(50): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        DATA = DATA << 1;
+             ~ ~~~~~^~~~
+ADC.c(52): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        DATA = DATA << 3;
+             ~ ~~~~~^~~~
+ADC.c(54): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        DATA = DATA << 3;
+             ~ ~~~~~^~~~
+ADC.c(56): warning: implicit conversion loses integer precision: 'int' to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+        DATA = DATA << 8;
+             ~ ~~~~~^~~~
+ADC.c(60): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+ADC.c(49): warning: variable 'DATA' is uninitialized when used here [-Wuninitialized]
+        DATA |= C_D;
+        ^~~~
+ADC.c(48): note: initialize the variable 'DATA' to silence this warning
+        uint16_t DATA;
+                     ^
+                      = 0
+ADC.c(8): warning: no previous extern declaration for non-static variable 'i' [-Wmissing-variable-declarations]
+int i;
+    ^
+ADC.c(8): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int i;
+^
+19 warnings generated.
+compiling ADC.c...
+TIMER.c(3): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_port.h(10): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(46): warning: '__CC_ARM' is not defined, evaluates to 0 [-Wundef]
+#if ((__CC_ARM == 0) || (__ARMCC_VERSION < 5000000))
+      ^
+TIMER.c(3): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_port.h(10): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(47): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config/MDR32F9Qx_board.h(28): warning: 'USE_MDR1986BE4' macro redefined [-Wmacro-redefined]
+#define USE_MDR1986BE4
+        ^
+<command line>(4): note: previous definition is here
+#define USE_MDR1986BE4 1
+        ^
+TIMER.c(5): warning: In file included from...
+./TIMER.h(4): warning: this function declaration is not a prototype [-Wstrict-prototypes]
+void TIMER1_init();
+                ^
+                 void
+./TIMER.h(8): warning: no newline at end of file [-Wnewline-eof]
+#endif /*__TIMER_H */
+                     ^
+TIMER.c(6): warning: non-portable path to file '"gpio.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "GPIO.h"
+         ^~~~~~~~
+         "gpio.h"
+TIMER.c(6): warning: In file included from...
+./GPIO.h(12): warning: no newline at end of file [-Wnewline-eof]
+#endif /*__GPIO_H */
+                    ^
+TIMER.c(16): warning: no previous prototype for function 'TIMER1_init' [-Wmissing-prototypes]
+void TIMER1_init(void)//<EF><E5><F0><E8><EE><E4> 1<F1><E5><EA>
+     ^
+./TIMER.h(4): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+void TIMER1_init();
+     ^
+                 void
+TIMER.c(33): warning: no previous prototype for function 'Delay_milli' [-Wmissing-prototypes]
+void Delay_milli(uint32_t time_milli)//<E7><E0><E4><E5><F0><E6><EA><E0> <EC><E0><EA><F1><E8><EC><F3><EC> 1<F1><E5><EA>(time_milli=999)
+     ^
+TIMER.c(33): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void Delay_milli(uint32_t time_milli)//<E7><E0><E4><E5><F0><E6><EA><E0> <EC><E0><EA><F1><E8><EC><F3><EC> 1<F1><E5><EA>(time_milli=999)
+^
+static 
+TIMER.c(39): warning: no previous prototype for function 'TIMER2_init' [-Wmissing-prototypes]
+void TIMER2_init(void)//<E2> <F0><E5><E6><E8><EC><E5> <E7><E0><F5><E2><E0><F2><E0>
+     ^
+TIMER.c(39): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIMER2_init(void)//<E2> <F0><E5><E6><E8><EC><E5> <E7><E0><F5><E2><E0><F2><E0>
+^
+static 
+TIMER.c(9): warning: no previous extern declaration for non-static variable 'TIMER1InitStruct' [-Wmissing-variable-declarations]
+TIMER_CntInitTypeDef TIMER1InitStruct;
+                     ^
+TIMER.c(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+TIMER_CntInitTypeDef TIMER1InitStruct;
+^
+TIMER.c(10): warning: no previous extern declaration for non-static variable 'sTIM1_ChnInit' [-Wmissing-variable-declarations]
+TIMER_ChnInitTypeDef sTIM1_ChnInit;
+                     ^
+TIMER.c(10): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+TIMER_ChnInitTypeDef sTIM1_ChnInit;
+^
+TIMER.c(12): warning: no previous extern declaration for non-static variable 'TIMER2InitStruct' [-Wmissing-variable-declarations]
+TIMER_CntInitTypeDef TIMER2InitStruct;
+                     ^
+TIMER.c(12): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+TIMER_CntInitTypeDef TIMER2InitStruct;
+^
+TIMER.c(13): warning: no previous extern declaration for non-static variable 'sTIM2_ChnInit' [-Wmissing-variable-declarations]
+TIMER_ChnInitTypeDef sTIM2_ChnInit;
+                     ^
+TIMER.c(13): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+TIMER_ChnInitTypeDef sTIM2_ChnInit;
+^
+TIMER.c(14): warning: unused variable 'count' [-Wunused-variable]
+static uint8_t count = 0; 
+               ^
+14 warnings generated.
+compiling TIMER.c...
+gpio.c(2): warning: non-portable path to file '"gpio.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "GPIO.h"
+         ^~~~~~~~
+         "gpio.h"
+gpio.c(2): warning: In file included from...
+./GPIO.h(5): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_port.h(10): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(46): warning: '__CC_ARM' is not defined, evaluates to 0 [-Wundef]
+#if ((__CC_ARM == 0) || (__ARMCC_VERSION < 5000000))
+      ^
+gpio.c(2): warning: In file included from...
+./GPIO.h(5): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_port.h(10): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(47): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config/MDR32F9Qx_board.h(28): warning: 'USE_MDR1986BE4' macro redefined [-Wmacro-redefined]
+#define USE_MDR1986BE4
+        ^
+<command line>(4): note: previous definition is here
+#define USE_MDR1986BE4 1
+        ^
+gpio.c(2): warning: In file included from...
+./GPIO.h(12): warning: no newline at end of file [-Wnewline-eof]
+#endif /*__GPIO_H */
+                    ^
+gpio.c(2): warning: In file included from...
+./GPIO.h(5): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_port.h(156): warning: padding size of 'PORT_InitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+gpio.c(10): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        PORT_InitTypeDef GPIO_init_struct_TIMER2;
+                         ^
+gpio.c(99): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        __IO uint32_t tt = MDR_PORTA->RXTX & PORT_Pin_10;
+                      ^
+gpio.c(99): warning: unused variable 'tt' [-Wunused-variable]
+8 warnings generated.
+compiling gpio.c...
+assembling startup_MDR1986BE4.s...
+RTE/Device/MDR1986BE4/system_MDR1986BE4.c(23): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(46): warning: '__CC_ARM' is not defined, evaluates to 0 [-Wundef]
+#if ((__CC_ARM == 0) || (__ARMCC_VERSION < 5000000))
+      ^
+RTE/Device/MDR1986BE4/system_MDR1986BE4.c(23): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(47): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config/MDR32F9Qx_board.h(28): warning: 'USE_MDR1986BE4' macro redefined [-Wmacro-redefined]
+#define USE_MDR1986BE4
+        ^
+<command line>(4): note: previous definition is here
+#define USE_MDR1986BE4 1
+        ^
+2 warnings generated.
+compiling system_MDR1986BE4.c...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c(6): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(46): warning: '__CC_ARM' is not defined, evaluates to 0 [-Wundef]
+#if ((__CC_ARM == 0) || (__ARMCC_VERSION < 5000000))
+      ^
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c(6): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(47): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config/MDR32F9Qx_board.h(28): warning: 'USE_MDR1986BE4' macro redefined [-Wmacro-redefined]
+#define USE_MDR1986BE4
+        ^
+<command line>(4): note: previous definition is here
+#define USE_MDR1986BE4 1
+        ^
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c(94): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+      tmpreg_OE     = (tmpreg_OE     & ~mask_s) | (PORT_InitStruct->PORT_OE        <<  pos);
+                                                ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c(95): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+      tmpreg_FUNC   = (tmpreg_FUNC   & ~mask_l) | (PORT_InitStruct->PORT_FUNC      << (pos*2));
+                                                ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c(96): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+      tmpreg_ANALOG = (tmpreg_ANALOG & ~mask_s) | (PORT_InitStruct->PORT_MODE      <<  pos);
+                                                ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c(98): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                                | (PORT_InitStruct->PORT_PULL_DOWN <<  pos);
+                                                ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c(97): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+      tmpreg_PULL   = (tmpreg_PULL   & ~mask_d) | (PORT_InitStruct->PORT_PULL_UP   << (pos + 16))
+                                                ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c(100): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                                | (PORT_InitStruct->PORT_PD        <<  pos);
+                                                ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c(99): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+      tmpreg_PD     = (tmpreg_PD     & ~mask_d) | (PORT_InitStruct->PORT_PD_SHM    << (pos + 16))
+                                                ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c(101): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+      tmpreg_PWR    = (tmpreg_PWR    & ~mask_l) | (PORT_InitStruct->PORT_SPEED     << (pos*2));
+                                                ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c(102): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+      tmpreg_GFEN   = (tmpreg_GFEN   & ~mask_s) | (PORT_InitStruct->PORT_GFEN      <<  pos);
+                                                ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c(7): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_port.h(156): warning: padding size of 'PORT_InitTypeDef' with 1 byte to alignment boundary [-Wpadded]
+typedef struct
+        ^
+12 warnings generated.
+compiling MDR32F9Qx_port.c...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_rst_clk.c(6): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(46): warning: '__CC_ARM' is not defined, evaluates to 0 [-Wundef]
+#if ((__CC_ARM == 0) || (__ARMCC_VERSION < 5000000))
+      ^
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_rst_clk.c(6): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(47): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config/MDR32F9Qx_board.h(28): warning: 'USE_MDR1986BE4' macro redefined [-Wmacro-redefined]
+#define USE_MDR1986BE4
+        ^
+<command line>(4): note: previous definition is here
+#define USE_MDR1986BE4 1
+        ^
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_rst_clk.c(487): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    temp &= ~(1<< RST_CLK_CPU_CLOCK_CPU_C2_SEL_Pos);
+         ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_rst_clk.c(982): warning: variable 'per_c2_freq' set but not used [-Wunused-but-set-variable]
+  uint32_t per_c1_freq, per_c2_freq;
+                        ^
+4 warnings generated.
+compiling MDR32F9Qx_rst_clk.c...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_ssp.c(6): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(46): warning: '__CC_ARM' is not defined, evaluates to 0 [-Wundef]
+#if ((__CC_ARM == 0) || (__ARMCC_VERSION < 5000000))
+      ^
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_ssp.c(6): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(47): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config/MDR32F9Qx_board.h(28): warning: 'USE_MDR1986BE4' macro redefined [-Wmacro-redefined]
+#define USE_MDR1986BE4
+        ^
+<command line>(4): note: previous definition is here
+#define USE_MDR1986BE4 1
+        ^
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_ssp.c(88): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+         + SSP_InitStruct->SSP_WordLength;
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.
+compiling MDR32F9Qx_ssp.c...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_timer.c(6): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(46): warning: '__CC_ARM' is not defined, evaluates to 0 [-Wundef]
+#if ((__CC_ARM == 0) || (__ARMCC_VERSION < 5000000))
+      ^
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_timer.c(6): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(47): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config/MDR32F9Qx_board.h(28): warning: 'USE_MDR1986BE4' macro redefined [-Wmacro-redefined]
+#define USE_MDR1986BE4
+        ^
+<command line>(4): note: previous definition is here
+#define USE_MDR1986BE4 1
+        ^
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_timer.c(112): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                      + TIMER_CntInitStruct->TIMER_BRK_Polarity;
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_timer.c(251): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  return TIMERx->CNT;
+  ~~~~~~ ~~~~~~~~^~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_timer.c(598): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                  + (TIMER_ChnInitStruct->TIMER_CH_FilterConf << TIMER_CH_CNTRL_CHFLTR_Pos);
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_timer.c(791): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  return tmpreg;
+  ~~~~~~ ^~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_timer.c(817): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  return tmpreg;
+  ~~~~~~ ^~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_timer.c(1222): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                   + (TIMER_ChnOutInitStruct->TIMER_CH_NegOut_Mode     << TIMER_CH_CNTRL1_NSELOE_Pos);
+                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_timer.c(1230): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+                + TIMER_ChnOutInitStruct->TIMER_CH_DTG_ClockSource;
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9 warnings generated.
+compiling MDR32F9Qx_timer.c...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_uart.c(6): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(46): warning: '__CC_ARM' is not defined, evaluates to 0 [-Wundef]
+#if ((__CC_ARM == 0) || (__ARMCC_VERSION < 5000000))
+      ^
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_uart.c(6): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config\MDR32F9Qx_config.h(47): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config/MDR32F9Qx_board.h(28): warning: 'USE_MDR1986BE4' macro redefined [-Wmacro-redefined]
+#define USE_MDR1986BE4
+        ^
+<command line>(4): note: previous definition is here
+#define USE_MDR1986BE4 1
+        ^
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_uart.c(149): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        tmpreg &= ~CR_FC_Mask;
+               ~~ ^~~~~~~~~~~
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_uart.c(7): warning: In file included from...
+C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc\MDR32F9Qx_uart.h(31): warning: padding size of 'UART_InitTypeDef' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct
+        ^
+4 warnings generated.
+compiling MDR32F9Qx_uart.c...
+linking...
+Program Size: Code=4016 RO-data=188 RW-data=8 ZI-data=5248  
+".\Objects\1273PV19T.axf" - 0 Error(s), 97 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.MDR1986BExx.1.5.pack
+                Keil.MDR1986BExx.1.5
+                Milandr MDR1986BExx Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.5
+   * Component: PORT Version: 1.5
+   * Component: RST_CLK Version: 1.5
+   * Component: SSP Version: 1.5
+   * Component: TIMER Version: 1.5
+   * Component: UART Version: 1.5
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/MDR1986BE4
+  ./RTE/_Target_1
+  C:/Users/shishov/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Config
+  C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/CMSIS/CM0/CoreSupport
+  C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/CMSIS/CM0/DeviceSupport/MDR1986BE4/inc
+  C:/Users/shishov/AppData/Local/Arm/Packs/Keil/MDR1986BExx/1.5/Libraries/MDR1986BE4_StdPeriph_Driver/inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.5
+      Source file:   Libraries/CMSIS/CM0/DeviceSupport/MDR1986BE4/startup/arm/startup_MDR1986BE4.s
+      Include file:  Libraries/CMSIS/CM0/CoreSupport/core_cm0.h
+      Include file:  Config/MDR32F9Qx_config.h
+      Include file:  Libraries/CMSIS/CM0/DeviceSupport/MDR1986BE4/startup/arm/system_MDR1986BE4.h
+      Source file:   Libraries/CMSIS/CM0/DeviceSupport/MDR1986BE4/startup/arm/system_MDR1986BE4.c
+
+   * Component: Keil::Drivers:PORT:1.5
+      Include file:  Libraries/MDR1986BE4_StdPeriph_Driver/inc/MDR32F9Qx_port.h
+      Source file:   Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_port.c
+
+   * Component: Keil::Drivers:RST_CLK:1.5
+      Source file:   Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_rst_clk.c
+      Include file:  Libraries/MDR1986BE4_StdPeriph_Driver/inc/MDR32F9Qx_rst_clk.h
+
+   * Component: Keil::Drivers:SSP:1.5
+      Include file:  Libraries/MDR1986BE4_StdPeriph_Driver/inc/MDR32F9Qx_ssp.h
+      Source file:   Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_ssp.c
+
+   * Component: Keil::Drivers:TIMER:1.5
+      Source file:   Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_timer.c
+      Include file:  Libraries/MDR1986BE4_StdPeriph_Driver/inc/MDR32F9Qx_timer.h
+
+   * Component: Keil::Drivers:UART:1.5
+      Include file:  Libraries/MDR1986BE4_StdPeriph_Driver/inc/MDR32F9Qx_uart.h
+      Source file:   Libraries/MDR1986BE4_StdPeriph_Driver/src/MDR32F9Qx_uart.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
